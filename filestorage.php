@@ -16,7 +16,7 @@ if (isset($_GET["username"])){
     if (isset($_GET["pin"])) {
         if(!check_password($_GET["username"], $_GET["pin"]))
         {
-            echo "Invalid Username / PIN <br>";
+            echo "<span style='color: red;'>Invalid Username / PIN</span><br><br>";
         }
     }
     else{
@@ -30,7 +30,7 @@ Please enter your Username and PIN.<br>
 <br>
 <form action="" method="GET">
     Username: <input type="text" size="40" name="username"><br>
-    PIN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" size="4" name="pin"> <br>
+    PIN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" name="pin"> <br>
     <input type="submit" value="Submit">
 </form>
 <br>

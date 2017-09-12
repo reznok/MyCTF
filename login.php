@@ -14,7 +14,7 @@
         if (isset($_POST["password"])) {
                 if (!check_password($_POST["username"], $_POST["password"]))
                 {
-                    echo "Invalid Username / Password <br>";
+                    echo "<span style='color: red;'>Invalid Username / Password </span><br><br>";
                 }
         }
         else{
