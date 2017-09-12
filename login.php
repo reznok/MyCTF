@@ -11,7 +11,6 @@
         if (isset($_POST["password"])) {
             if(check_password($_POST["username"], $_POST["password"]))
             {
-                session_start();
                 $_SESSION["login_user"] = $_POST["username"];
                 header('Location: /index.php');
             }
