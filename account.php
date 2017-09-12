@@ -9,12 +9,12 @@ if (!isset($_SESSION["login_user"]))
 }
 
 if ($_SESSION["login_user"] == "pawl"){
-    echo "Hello Pawl! Your Flag Is: ABCD{FLAG!}";
+    echo "Hello Pawl! Your Flag Is: ABCD{FLAG!}<br><br>";
 }
 
 ?>
 
-The <i>admin</i> user has implemented an online <a href="/filestorage.php">file storage</a> for everyone to use. Just login with your username and <a href="/pin.html">PIN</a>!
+The <i>admin</i> user has implemented an online <a href="/filestorage.php">file storage</a> for everyone to use. Just login with your username and <a href="/pin.php">PIN</a>!
 
 
 

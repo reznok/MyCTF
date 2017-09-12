@@ -2,18 +2,20 @@
     include("header.php");
 
     function check_password($user, $pass){
-        if ($user == "pawl" && $pass == "1337hax0rz")
+        if ($user == "pawl" && $pass == "1337hax0rz"){
+            $_SESSION["login_user"] = $_POST["username"];
+            header('Location: /account.php');
             return true;
+        }
         return false;
     }
 
     if (isset($_POST["username"])){
         if (isset($_POST["password"])) {
-            if(check_password($_POST["username"], $_POST["password"]))
-            {
-                $_SESSION["login_user"] = $_POST["username"];
-                header('Location: /account.php');
-            }
+                if (!check_password($_POST["username"], $_POST["password"]))
+                {
+                    echo "Invalid Username / Password <br>";
+                }
         }
         else{
             echo "Please Enter A Password";

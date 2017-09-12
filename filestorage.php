@@ -1,0 +1,43 @@
+<?php
+include("header.php");
+
+function check_password($user, $pass){
+    if ($user == "YOUR_USERNAME" && $pass=="YOUR_PIN"){
+        echo "Did you really think that would work? You need to change them!<br><br>";
+    }
+    if ($user == "pawl" && $pass == "5555") {
+        echo "Here's Your Files!";
+    }
+    return false;
+}
+
+if (isset($_POST["username"])){
+    if (isset($_POST["pin"])) {
+        if(!check_password($_POST["username"], $_POST["pin"]))
+        {
+            echo "Invalid Username / PIN <br>";
+        }
+    }
+    else{
+        echo "Please Enter A PIN";
+    }
+}
+?>
+
+<html>
+Please enter your Username and PIN. Alternatively, you can login by going to:<br>
+http://localhost/filestorage.php?username=YOUR_USERNAME&pin=YOUR_PIN<br>
+<br>
+Just replace YOUR_USERNAME with your username, and YOUR_PIN with your pin!
+
+
+
+<form action="" method="GET">
+    Username: <input type="text" size="40" name="username"><br>
+    PIN: <input type="text" size="4" name="pin"> <br>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+<!-- They'll never guess that my password is 1337hax0rz -->
