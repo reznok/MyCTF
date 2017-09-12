@@ -9,6 +9,7 @@ include("header.php");
     <title>Title</title>
 </head>
 <body>
+In an effort to increase security, all file storage accounts must have a PIN.<br><br>
 <h2>PIN Guidelines</h2>
 <div>
 <ul>- PINs Must Be At Least 4 Characters Long</ul>
