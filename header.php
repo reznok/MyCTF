@@ -1,7 +1,8 @@
 <?php
-
+    if (isset($_SESSION["login_user"]))
+    {
+        echo "Logged In As: " . $_SESSION["login_user"];
+    }
 ?>
-
-Title Bar Here
 <br>
 <br>

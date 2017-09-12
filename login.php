@@ -1,4 +1,6 @@
 <?php
+    include("header.php");
+
     function check_password($user, $pass){
         if ($user == "pawl" && $pass == "1337hax0rz")
             return true;
@@ -9,7 +11,9 @@
         if (isset($_POST["password"])) {
             if(check_password($_POST["username"], $_POST["password"]))
             {
-                echo "You Are Now Logged In As: " . $_POST["username"];
+                session_start();
+                $_SESSION["login_user"] = $_POST["username"];
+                header('Location: /index.php');
             }
         }
         else{
@@ -19,7 +23,7 @@
 ?>
 
 <html>
-<form action="#" method="POST">
+<form action="" method="POST">
     Username: <input type="text" size="40" name="username"><br>
     Password: <input type="password" size="40" name="password"> <br>
     <input type="submit" value="Submit">
