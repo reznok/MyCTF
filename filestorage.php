@@ -7,6 +7,7 @@ function check_password($user, $pass){
     }
     if ($user == "pawl" && $pass == "5555") {
         echo "Here's Your Files!";
+        return true;
     }
     return false;
 }
@@ -26,21 +27,19 @@ if (isset($_GET["username"])){
 
 <html>
 Please enter your Username and PIN.<br>
+<br>
+<form action="" method="GET">
+    Username: <input type="text" size="40" name="username"><br>
+    PIN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" size="4" name="pin"> <br>
+    <input type="submit" value="Submit">
+</form>
+<br>
+<br>
+
 Alternatively, you can login by going to:<br>
 http://localhost/filestorage.php?username=YOUR_USERNAME&pin=YOUR_PIN<br>
 <br>
 Just replace YOUR_USERNAME with your username, and YOUR_PIN with your pin!
-<br>
-<br>
-<br>
-
-
-
-<form action="" method="GET">
-    Username: <input type="text" size="40" name="username"><br>
-    PIN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" size="4" name="pin"> <br>
-    <input type="submit" value="Submit">
-</form>
 
 
 
