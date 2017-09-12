@@ -7,7 +7,7 @@
     {
         echo "Logged In As: " . $_SESSION["login_user"] . "<br><br>";
         echo "<a href='/index.php'>Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-        echo "<a href='/logout.php'>Account</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        echo "<a href='/account.php'>Account</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         echo "<a href='/logout.php'>Logout</a><br>";
 
     }
