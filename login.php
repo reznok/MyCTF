@@ -12,7 +12,7 @@
             if(check_password($_POST["username"], $_POST["password"]))
             {
                 $_SESSION["login_user"] = $_POST["username"];
-                header('Location: /index.php');
+                header('Location: /account.php');
             }
         }
         else{
