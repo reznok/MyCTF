@@ -11,7 +11,7 @@ function check_password($user, $pass){
         exit();
     }
 
-    if ($user == "admin" && $pass = "5555"){
+    if ($user == "admin" && $pass == "8256"){
         echo "Hey! Stay out of my files! (That is unless you're going to give me a COOKIE...)";
         exit();
     }
