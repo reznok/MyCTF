@@ -11,12 +11,10 @@ include("header.php");
 <body>
 <h2>PIN Guidelines</h2>
 <div>
-<li>
-    <ul>- PINs Must Be At Least 4 Characters Long</ul>
-    <ul>- PINs May Not Be Longer Than 4 Characters</ul>
-    <ul>- PINs May Not Contain Letters</ul>
-    <ul>- PINs May Not Contain Special Characters</ul>
-</li>
+<ul>- PINs Must Be At Least 4 Characters Long</ul>
+<ul>- PINs May Not Be Longer Than 4 Characters</ul>
+<ul>- PINs May Not Contain Letters</ul>
+<ul>- PINs May Not Contain Special Characters</ul>
 </div>
 </body>
 </html>

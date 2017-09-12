@@ -15,6 +15,13 @@ if ($_SESSION["login_user"] == "pawl"){
 ?>
 
 The <i>admin</i> user has implemented an online <a href="/filestorage.php">file storage</a> for everyone to use. Just login with your username and <a href="/pin.php">PIN</a>!
+<br>
+<br>
+<h3>Account Info</h3><br>
+Name: Pawl<br>
+Birthday: 10/24/2014<br>
+Favorite Food: Salmon<br>
+
 
 
 

@@ -3,11 +3,17 @@ include("header.php");
 
 function check_password($user, $pass){
     if ($user == "YOUR_USERNAME" && $pass=="YOUR_PIN"){
-        echo "Did you really think that would work? You need to change them!<br><br>";
+        echo "Did you really think that would work? You need to change YOUR_USERNAME and YOUR_PIN!<br><br>";
     }
-    if ($user == "pawl" && $pass == "5555") {
-        echo "Here's Your Files!";
-        return true;
+    if ($user == "pawl" && $pass == "1024") {
+        echo "<h2>Pawl's Files</h2><br><br>";
+        echo "<a href='/s3cret_fil3_flag.txt'>Flag</a>";
+        exit();
+    }
+
+    if ($user == "admin" && $pass = "5555"){
+        echo "Hey! Stay out of my files! (That is unless you're going to give me a COOKIE...)";
+        exit();
     }
     return false;
 }
