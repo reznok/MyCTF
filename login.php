@@ -4,6 +4,19 @@
     function check_password($user, $pass){
         if ($user == "pawl" && $pass == "1337hax0rz"){
             $_SESSION["login_user"] = $_POST["username"];
+            setcookie("is_admin", "0", time() + (86400 * 30), "/");
+            header('Location: /account.php');
+            return true;
+        }
+        if ($user == "admin" && $pass == "qwertyuiop"){
+            $_SESSION["login_user"] = $_POST["username"];
+            setcookie("is_admin", "1", time() + (86400 * 30), "/");
+            header('Location: /account.php');
+            return true;
+        }
+        if ($user == "reznok" && $pass == "totallysecure"){
+            $_SESSION["login_user"] = $_POST["username"];
+            setcookie("is_admin", "0", time() + (86400 * 30), "/");
             header('Location: /account.php');
             return true;
         }

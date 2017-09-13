@@ -1,0 +1,6 @@
+admin: Hey Pawl, how's it going?
+pawl: I forgot my password can you send it to me?
+admin: Sure, I've got the site passwords right here in my filestorage. Your password is 1337hax0rz.
+pawl: Thanks admin! I hope no one ever gets into your filestorage!
+admin: Don't worry, they would have to crack my pin and beat my awesome web security.
+
