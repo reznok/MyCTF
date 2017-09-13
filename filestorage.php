@@ -12,7 +12,7 @@ function check_password($user, $pass){
         echo "Did you really think that would work? You need to change YOUR_USERNAME and YOUR_PIN!<br><br>";
     }
     if ($user == "pawl" && $pass == "1024") {
-        echo "<h2>Pawl's Files</h2><br><br>";
+        echo "<h2>Pawl's Files</h2>";
         echo "<a href='/s3cret_fil3_flag.txt'>Flag</a><br>";
         echo "<a href='/pawl_admin_chat_history.txt'>Pawl and Admin Chat History</a>";
         exit();
@@ -23,7 +23,7 @@ function check_password($user, $pass){
             echo "Hey! Stay out of my files! (That is unless you're going to give me a COOKIE...)";
             exit();
         }
-        echo "<h2>Admin's Files</h2><br><br>";
+        echo "<h2>Admin's Files</h2>";
         echo "<a href='/s3cret_fil3_flag_but_this_time_admin.txt'>Flag</a><br>";
         echo "<a href='/super_secure_password_storage.txt'>Password Database</a><br>";
         exit();

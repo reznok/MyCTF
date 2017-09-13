@@ -24,7 +24,8 @@ Favorite Food: Salmon<br>
 }
 
 if ($_SESSION["login_user"] == "admin") {
-    echo "Hello Admin! Your Flag Is: ABCD{MD5_Is_Secure}<br><br>";
+    echo "Hello Admin! Your Flag Is: ABCD{MD5_Is_Secure}<br>
+           No More Flags For Now!<br><br>";
 
 
     echo '
