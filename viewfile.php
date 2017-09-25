@@ -7,6 +7,7 @@
  */
 
 if (isset($_GET['file'])){
+    echo "Displaying: " . dirname(__DIR__).$_GET['file']."\n\n\n";
     include(dirname(__DIR__).$_GET['file']);
 }
 else{
