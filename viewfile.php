@@ -7,7 +7,7 @@
  */
 
 if (isset($_GET['file'])){
-    include($_GET['file']);
+    include(dirname(__DIR__).$_GET['file']);
 }
 else{
     echo "Error";
