@@ -7,8 +7,10 @@
  */
 
 if (isset($_GET['file'])){
-    echo "Displaying: " . dirname(__DIR__).$_GET['file']."\n\n\n";
-    include(dirname(__DIR__).$_GET['file']);
+    $dir = dirname(__DIR__) . "/MyCTF/";
+
+    echo "Displaying: " . $dir.$_GET['file']."\n\n\n";
+    include($dir.$_GET['file']);
 }
 else{
     echo "Error";
