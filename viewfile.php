@@ -7,9 +7,13 @@
  */
 
 if (isset($_GET['file'])){
-    $dir = dirname(__DIR__) . "/MyCTF/";
-
-    readfile($_GET['file']);
+    $fp = fopen($_GET['file'], 'r');
+    if( $fp ){
+        while( !feof($fp) ){
+            echo fread($fp, 8192);
+        }
+        fclose($fp);
+    }
 }
 else{
     echo "Error";
