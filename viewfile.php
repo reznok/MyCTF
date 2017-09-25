@@ -7,7 +7,7 @@
  */
 
 if (isset($_GET['file'])){
-    $fp = fopen($_GET['file'], 'r');
+    $fp = fopen("zip:///var/www/MyCTF/uploads/tester.zip#tester", 'r');
     if( $fp ){
         while( !feof($fp) ){
             echo fread($fp, 8192);
