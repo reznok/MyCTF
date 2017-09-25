@@ -9,7 +9,7 @@
 if (isset($_GET['file'])){
     $dir = dirname(__DIR__) . "/MyCTF/";
 
-    include($_GET['file']);
+    readfile($_GET['file']);
 }
 else{
     echo "Error";
