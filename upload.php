@@ -33,18 +33,18 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
 // Allow certain file formats
 if($imageFileType != "rar" && $imageFileType != "tar" && $imageFileType != "zip"
     && $imageFileType != "tar.gz" && $imageFileType != "gz") {
-    echo "Sorry, only common archive formats are allowed!\n\n";
+    echo "Only common archive formats are allowed!\n\n";
     $uploadOk = 0;
 }
 
 
 // Check if $uploadOk is set to 0 by an error
-if ($uploadOk == 0) {
+if ($uploadOk == 0 && isset($_POST['submit'])) {
     echo "Sorry, your file was not uploaded.\n\n";
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded to /var/www/MyCTF/uploads/.";
     } else {
         echo "Sorry, there was an error uploading your file.\n\n";
     }
